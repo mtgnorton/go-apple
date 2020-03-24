@@ -21,12 +21,6 @@
       <change afterPath="$PROJECT_DIR$/../eth-usdt/vendor/github.com/ethereum/go-ethereum/crypto/signature_cgo.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../eth-usdt/vendor/github.com/ethereum/go-ethereum/crypto/signature_nocgo.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gograb/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/spider-apple.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gograb/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gograb/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gograb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gograb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gograb/Gopkg.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../gograb/Gopkg.lock" afterDir="false" />
@@ -42,6 +36,8 @@
       <change beforePath="$PROJECT_DIR$/../gograb/orm/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/../gograb/orm/db.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gograb/utils/common.go" beforeDir="false" afterPath="$PROJECT_DIR$/../gograb/utils/common.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gograb/utils/date.go" beforeDir="false" afterPath="$PROJECT_DIR$/../gograb/utils/date.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../nrt_backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nrt_backend/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../nrt_backend/controller/actor/actor.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nrt_backend/controller/actor/actor.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../nrt_backend/controller/common/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nrt_backend/controller/common/response.go" afterDir="false" />
@@ -80,12 +76,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="703" />
+          <entry key="go" value="710" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="703" />
+          <entry key="Go" value="710" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
@@ -100,8 +96,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+            <state relative-caret-position="360">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="55" selection-end-column="11" />
               <folding>
                 <element signature="e#14#79#0" expanded="true" />
               </folding>
@@ -138,7 +134,7 @@
   </component>
   <component name="GOROOT" path="D:\Go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -277,11 +273,11 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32415253" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32415253" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3125" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3125" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -329,8 +325,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+        <state relative-caret-position="360">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="55" selection-end-column="11" />
           <folding>
             <element signature="e#14#79#0" expanded="true" />
           </folding>

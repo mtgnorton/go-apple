@@ -39,8 +39,21 @@ func main() {
 			info += "商品为: " + title + "   <br>"
 			info += "价格为: " + price + "   <br> "
 			info += " <br>"
-
+			info += " <br>"
+			info += " <br>"
+			info += " <br>"
+			info += " <br>"
 		}
+
+		//if (strings.Contains(title, "5")) && strings.Contains(title, "蜂窝") {
+		//	amount++
+		//	info += "商品为: " + title + "   <br>"
+		//	info += "价格为: " + price + "   <br> "
+		//	info += " <br>"
+		//	info += " <br>"
+		//	info += " <br>"
+		//	info += " <br>"
+		//}
 	}
 	if (amount > 0) {
 		err := SendMail(mailTo, fmt.Sprintf("官方可买数量为%d", amount), info)
