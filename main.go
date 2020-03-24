@@ -8,24 +8,36 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
+	"time"
 )
 
 const Re = `"seoPrice":([^}]*)}[\s\S]*?"title":"([^"]+)"`
 
+var last = ""
+
 func main() {
+
+	ticker := time.NewTicker(5 * time.Second)
+	for _ = range ticker.C {
+		Grab()
+	}
+
+}
+
+func Grab() {
 	mailTo := []string{
 		"15726204663@163.com",
 	}
 
 	resp, err := http.Get("https://www.apple.com.cn/cn-k12/shop/refurbished/ipad")
 	if err != nil {
-		fmt.Println("抓取错误", err);
+		log("抓取错误", err);
 	}
 
 	defer resp.Body.Close()
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		fmt.Println("解析响应错误", err);
+		log("解析响应错误", err);
 	}
 
 	allNode := ExtractAllString(Re, body)
@@ -34,7 +46,7 @@ func main() {
 	for _, singleNode := range allNode {
 		price := string(singleNode[1])
 		title := string(singleNode[2])
-		if (strings.Contains(title, "ro") || strings.Contains(title, "ir") ) && !strings.Contains(title, "蜂窝") {
+		if (strings.Contains(title, "ro") || strings.Contains(title, "ir")) && !strings.Contains(title, "蜂窝") {
 			amount++
 			info += "商品为: " + title + "   <br>"
 			info += "价格为: " + price + "   <br> "
@@ -45,7 +57,7 @@ func main() {
 			info += " <br>"
 		}
 
-		//if (strings.Contains(title, "5")) && strings.Contains(title, "蜂窝") {
+		//if (strings.Contains(title, "5")) {
 		//	amount++
 		//	info += "商品为: " + title + "   <br>"
 		//	info += "价格为: " + price + "   <br> "
@@ -56,10 +68,20 @@ func main() {
 		//}
 	}
 	if (amount > 0) {
-		err := SendMail(mailTo, fmt.Sprintf("官方可买数量为%d", amount), info)
-		fmt.Println(err)
+
+		if (info != last) {
+			last = info
+			 SendMail(mailTo, fmt.Sprintf("官方可买数量为%d", amount), info)
+			log(fmt.Sprintf("官方可买数量为%d", amount), strings.Replace(info, "<br>", "\n", -1))
+		}
 	}
-	fmt.Println("完成")
+	log("完成")
+}
+
+func log(a ...interface{}) {
+	t := time.Now().Format("2006-01-02 15:04:05")
+	fmt.Println("当前时间为:" + t)
+	fmt.Println(a...)
 }
 
 func ExtractAllString(reStr string, content []byte) [][][]byte {
