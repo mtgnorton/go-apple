@@ -36,7 +36,6 @@
       <change beforePath="$PROJECT_DIR$/../gograb/orm/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/../gograb/orm/db.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gograb/utils/common.go" beforeDir="false" afterPath="$PROJECT_DIR$/../gograb/utils/common.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gograb/utils/date.go" beforeDir="false" afterPath="$PROJECT_DIR$/../gograb/utils/date.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../nrt_backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nrt_backend/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../nrt_backend/controller/actor/actor.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nrt_backend/controller/actor/actor.go" afterDir="false" />
@@ -76,12 +75,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="710" />
+          <entry key="go" value="728" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="710" />
+          <entry key="Go" value="728" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
@@ -96,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="55" selection-end-column="11" />
+            <state relative-caret-position="396">
+              <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
               <folding>
                 <element signature="e#14#79#0" expanded="true" />
               </folding>
@@ -325,8 +324,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="55" selection-end-column="11" />
+        <state relative-caret-position="396">
+          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
           <folding>
             <element signature="e#14#79#0" expanded="true" />
           </folding>

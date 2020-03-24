@@ -59,6 +59,7 @@ func main() {
 		err := SendMail(mailTo, fmt.Sprintf("官方可买数量为%d", amount), info)
 		fmt.Println(err)
 	}
+	fmt.Println("完成")
 }
 
 func ExtractAllString(reStr string, content []byte) [][][]byte {
