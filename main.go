@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/mtgnorton/spider-apple/vendor/gopkg.in/gomail.v2"
+	"gopkg.in/gomail.v2"
 	"io/ioutil"
 	"net/http"
 	"regexp"
@@ -20,7 +20,9 @@ func main() {
 	ticker := time.NewTicker(5 * time.Second)
 	for _ = range ticker.C {
 		err := Grab()
-		log(err)
+		if err != nil {
+			log(err)
+		}
 	}
 
 }
