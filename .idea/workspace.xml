@@ -21,11 +21,6 @@
       <change afterPath="$PROJECT_DIR$/../eth-usdt/vendor/github.com/ethereum/go-ethereum/crypto/signature_cgo.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../eth-usdt/vendor/github.com/ethereum/go-ethereum/crypto/signature_nocgo.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gograb/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/spider-apple.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gograb/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gograb/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gograb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gograb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gograb/Gopkg.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../gograb/Gopkg.lock" afterDir="false" />
@@ -41,9 +36,6 @@
       <change beforePath="$PROJECT_DIR$/../gograb/orm/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/../gograb/orm/db.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gograb/utils/common.go" beforeDir="false" afterPath="$PROJECT_DIR$/../gograb/utils/common.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gograb/utils/date.go" beforeDir="false" afterPath="$PROJECT_DIR$/../gograb/utils/date.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../nrt_backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nrt_backend/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../nrt_backend/controller/actor/actor.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nrt_backend/controller/actor/actor.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../nrt_backend/controller/common/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nrt_backend/controller/common/response.go" afterDir="false" />
@@ -102,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state relative-caret-position="378">
+              <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding>
                 <element signature="e#14#118#0" expanded="true" />
               </folding>
@@ -264,14 +256,14 @@
       <window_info id="Favorites" order="2" sideWeight="0.50179213" side_tool="true" weight="0.25266525" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25105932" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25105932" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3230932" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3230932" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -331,8 +323,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        <state relative-caret-position="378">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
           <folding>
             <element signature="e#14#118#0" expanded="true" />
           </folding>
