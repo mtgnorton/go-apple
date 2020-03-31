@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"gopkg.in/gomail.v2"
+	"github.com/mtgnorton/spider-apple/vendor/gopkg.in/gomail.v2"
 	"io/ioutil"
 	"net/http"
 	"regexp"
@@ -19,12 +19,19 @@ func main() {
 
 	ticker := time.NewTicker(5 * time.Second)
 	for _ = range ticker.C {
-		Grab()
+		err := Grab()
+		log(err)
 	}
 
 }
 
-func Grab() {
+func Grab() error {
+	defer func() {
+		if err := recover(); err != nil {
+			log("发生panic错误,错误信息为:[%v]", err)
+
+		}
+	}()
 	mailTo := []string{
 		"15726204663@163.com",
 	}
@@ -32,12 +39,14 @@ func Grab() {
 	resp, err := http.Get("https://www.apple.com.cn/cn-k12/shop/refurbished/ipad")
 	if err != nil {
 		log("抓取错误", err);
+		return err
 	}
 
 	defer resp.Body.Close()
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		log("解析响应错误", err);
+		return err
 	}
 
 	allNode := ExtractAllString(Re, body)
@@ -71,11 +80,16 @@ func Grab() {
 
 		if (info != last) {
 			last = info
-			 SendMail(mailTo, fmt.Sprintf("官方可买数量为%d", amount), info)
+			err = SendMail(mailTo, fmt.Sprintf("官方可买数量为%d", amount), info)
+			if err != nil {
+				log("邮箱发送错误")
+				return err
+			}
 			log(fmt.Sprintf("官方可买数量为%d", amount), strings.Replace(info, "<br>", "\n", -1))
 		}
 	}
 	log("完成")
+	return nil
 }
 
 func log(a ...interface{}) {
